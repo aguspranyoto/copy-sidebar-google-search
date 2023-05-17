@@ -6,7 +6,7 @@ html {
 }
 
 :root {
-  --hitam-primary: rgba(0, 0, 0, 0.897);
+  --hitam-primary: rgba(0, 0, 0, 0.797);
   --hitam-secondary: rgba(0, 0, 0, 0.697);
   --putih-primary: white;
   --biru-primary: rgb(0, 110, 255);
@@ -49,6 +49,7 @@ body {
 .header__kiri span {
   display: flex;
   margin-right: 20px;
+  cursor: pointer;
 }
 .header__kiri a {
   text-decoration: none;
@@ -56,6 +57,18 @@ body {
   color: var(--hitam-primary);
   font-weight: 500;
   font-size: 15px;
+}
+
+.header__kanan {
+  display: flex;
+  align-items: center;
+}
+.header__kanan span {
+  cursor: pointer;
+}
+
+.header__kanan .profile {
+  font-size: 35px;
 }
 
 .header span {
@@ -69,7 +82,7 @@ body {
   justify-content: center;
   height: 100vh;
   padding-bottom: 200px;
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 .container .logo {
@@ -93,6 +106,11 @@ body {
   -moz-border-radius: 99px;
   -ms-border-radius: 99px;
   -o-border-radius: 99px;
+}
+.search:hover {
+  box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.18);
+  -webkit-box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.18);
 }
 
 .search .search__input {
@@ -122,6 +140,7 @@ body {
 }
 .language a {
   text-decoration: none;
+  color: var(--biru-primary);
 }
 
 .trending {
